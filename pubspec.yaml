@@ -16,8 +16,8 @@ dependencies:
   json_annotation: ^4.8.1
   
   cts_tappable:
-    git: https://github.com/fsmcts/cts_tappable
-
+    git:
+      url: https://cts-cts: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@github.com/cts-cts/cts_tappable
 dev_dependencies:
   flutter_test:
     sdk: flutter
