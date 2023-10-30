@@ -2,7 +2,6 @@ import 'package:cts_tappable/cts_tappable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
-import 'package:map_example/main.dart';
 import '../models/polygon_data.dart';
 
 class MapController extends GetxController {
@@ -27,7 +26,7 @@ class MapController extends GetxController {
           borderStrokeWidth: 3,
           points: points,
           labelPlacement: PolygonLabelPlacement.centroid,
-          label: '5345345634',
+          label: 'Label $id',
           labelStyle: TextStyle(
             color: Colors.red,
             fontWeight: FontWeight.bold,
@@ -42,7 +41,7 @@ class MapController extends GetxController {
     polygons.removeWhere((e) => e.id == id);
   }
 
-  void onTap(TapPosition tapPosition, LatLng point) {
+  void onTap(_, LatLng point) {
     for (final p in polygons) {
       if (CtsTappable.isPointInPolygon(point: point, polygon: p.points)) {
         removePolygon(p.id);
