@@ -1,6 +1,7 @@
 import 'package:cts_tappable/cts_tappable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
+import 'package:cts_flutter_map/cts_flutter_map.dart';
+
 import 'package:get/get.dart';
 import 'package:map_example/src/base/base.dart';
 

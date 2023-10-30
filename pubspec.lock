@@ -161,6 +161,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  cts_flutter_map:
+    dependency: "direct main"
+    description:
+      name: cts_flutter_map
+      sha256: d0e4b03df6f2bd0bb3a2c6792bfeb11207d87bc61f41e6431a585100e1c8570b
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.0"
   cts_tappable:
     dependency: "direct main"
     description:
@@ -231,14 +239,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
-  flutter_map:
-    dependency: "direct main"
-    description:
-      name: flutter_map
-      sha256: e625957146c7d2e847da2cdefd893d6f5315ced6ee5228d2c05fec760cab3ad7
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
