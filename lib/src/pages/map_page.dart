@@ -1,3 +1,4 @@
+import 'package:cts_tappable/cts_tappable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
@@ -32,17 +33,18 @@ class MapPage extends StatelessWidget {
         () => FlutterMap(
           options: MapOptions(
             initialZoom: 17,
-            initialCenter: Base.mapController.polygons.first.points.first,
+            initialCenter: LatLng(23.791133888910295, 90.41278707707494),
             onTap: Base.mapController.onTap,
           ),
           children: [
             TileLayer(
               urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
             ),
-            PolygonLayer(
-              polygonLabels: true,
-              polygons: Base.mapController.polygons,
-            ),
+            if (Base.mapController.polygons.isNotEmpty)
+              PolygonLayer(
+                polygonLabels: true,
+                polygons: Base.mapController.polygons,
+              ),
           ],
         ),
       ),
